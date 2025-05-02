@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lana's Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body, h1, h2, h3, h4, h5, h6 {
+      font-family: "Montserrat", sans-serif;
+      color: #333;
+    }
+
+    body {
+      background-color: #f9f9f9;
+    }
+
+    .w3-content {
+      background-color: #ffffff;
+      padding: 24px;
+      border-radius: 6px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    .w3-row-padding img {
+      margin-bottom: 12px;
+    }
+
+    .bgimg {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url('Mypic.jpg');
+      min-height: 100%;
+    }
+
+    input[type=text], input[type=email], textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      resize: vertical;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      font-size: 14px;
+    }
+
+    input[type=submit] {
+      background-color: #333;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    input[type=submit]:hover {
+      background-color: #000;
+    }
+
+    .w3-bar-item {
+      font-size: 22px;
+      font-weight: 500;
+    }
+
+    .w3-container h2, h3 {
+      color: #222;
+    }
+
+    .w3-card img {
+      border-radius: 4px 4px 0 0;
+    }
+
+    .w3-container p {
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Sidebar with image -->
+<nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:40%">
+  <div class="bgimg"></div>
+</nav>
+
+<!-- Hidden Sidebar -->
+<nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright" style="padding:0 12px;">
+    <i class="fa fa-remove"></i>
+  </a>
+  <div class="w3-bar-block w3-center">
+    <a href="#home" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
+    <a href="#about" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">About Me</a>
+    <a href="#projects" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Projects</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Contact</a>
+  </div>
+</nav>
+
+<!-- Page Content -->
+<div class="w3-main w3-padding-large" style="margin-left:40%">
+
+  <!-- Menu icon -->
+  <span class="w3-button w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="position:fixed; top:16px; right:16px; z-index:3;" onclick="openNav()">
+    <i class="fa fa-bars"></i>
+  </span>
+
+  <!-- Header -->
+  <header class="w3-container w3-center" style="padding:128px 16px" id="home">
+   <h1 class="w3-jumbo"><b>Lana Gvirjishvili</b></h1>
+    <p>Explore everything about me...</p>
+    <img src="Mypic.jpg" class="w3-image w3-hide-large w3-hide-medium w3-round" width="1000" height="1333">
+  </header>
+
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-padding-32" id="about">
+    <h2>About Me</h2>
+    <hr class="w3-opacity">
+    <p>Hi, I’m Lana Gvirjishvili, an exchange student from Georgia currently spending an exchange year in Miller, South Dakota. This journey has helped me grow personally and academically, giving me the chance to step out of my comfort zone, make lifelong connections, and better understand the world around me.</p>
+    <p>I’m passionate about communication, leadership, and learning about different cultures. I speak five languages—Georgian, Russian, English, Turkish, and Armenian—and I understand even more! Language has always been my gateway to connecting with people and building bridges between cultures.</p>
+    <p>When I return home, I’ll be graduating and starting university to study International Communications. I’m planning to specialize in intercultural relations and media, and I’m seriously considering coming back to the U.S. for my senior year to earn a second diploma and broaden my international experience even more.</p>
+    <p>In the future, I hope to work in diplomacy, international media, or global non-profits. I want to learn more languages and travel the world to explore new cultures, meet inspiring people, and make a meaningful difference wherever I go. Outside of academics, I enjoy photography, reading, traveling, gardening, and making wine with my grandpa, which are special moments I really enjoy.</p>
+    <p>This exchange year has been a powerful reminder that the world is full of opportunity, and I can’t wait to see where life takes me next.</p>
+
+    <!-- Projects Section -->
+    <h3 class="w3-padding-16" id="projects">Projects During My Exchange Year</h3>
+
+    <div class="w3-card w3-white w3-margin-bottom w3-padding">
+      <div class="w3-container">
+        <h4><b>Volunteering Certificate</b></h4>
+        <p>I earned this certificate after completing over 100 hours of volunteer work during my exchange year. This experience taught me the value of community service and helped me connect with people from diverse backgrounds.</p>
+        <img src="volluntering-certificate.jpg" alt="Volunteering Certificate" style="width:100%; max-width:400px; height:auto; margin:12px auto 0; display:block; border-radius:4px;">
+      </div>
+
+<div class="w3-card w3-white w3-margin-bottom w3-padding">
+  <div class="w3-container">
+    <h4><b>Member of National Honor Society</b></h4>
+    <p>I became a member of the National Honor Society during my exchange year. It means I did well in school, helped others, and showed good character. I'm really proud of it because it shows my hard work and how much I care about learning and helping my community.</p>
+    <img src="Honor.jpg" alt="National Honor Society Certificate" style="width:100%; max-width:400px; height:auto; margin:12px auto 0; display:block; border-radius:4px;">
+  </div>
+</div>
+
+<div class="w3-card w3-white w3-margin-bottom w3-padding">
+  <div class="w3-container">
+    <h4><b>Job Shadowing at Lunchbox</b></h4>
+    <p>In my Employability class, our final project was to do job shadowing anywhere we wanted. I chose Lunchbox because I was really interested in how things work in a kitchen. I got to help make pizzas and cookies, and I learned about all the different jobs there. It was a great experience, and now I want to start my own pizza business someday.</p>
+    <img src="Jobshadow.jpg" alt="Job Shadowing at Lunchbox" style="width:100%; max-width:400px; height:auto; margin:12px auto 0; display:block; border-radius:4px;">
+  </div>
+</div>
+
+
+
+
+
+
+   
+<div class="w3-content w3-justify w3-padding-32" id="video">
+  <h3 class="w3-padding-16">My Exchange Year Video</h3>
+  <p>Here’s a short video I created to highlight the most special moments of my exchange year in South Dakota. Enjoy!</p>
+
+  <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;max-width:100%;border-radius:8px;">
+    <video width="100%" height="auto" controls>
+  <source src="videoplayback.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+    </iframe>
+  </div>
+</div>
+
+
+
+  <!-- Contact Section -->
+  <div class="w3-content w3-justify w3-padding-32" id="contact">
+    <h2>Contact</h2>
+    <hr class="w3-opacity">
+    <p>If you'd like to get in touch with me, feel free to use the form below!</p>
+
+    <form action="https://formsubmit.co/your-email@example.com" method="POST">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Your name.." required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Your email.." required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" placeholder="Write something.." style="height:150px" required></textarea>
+
+      <input type="submit" value="Send Message">
+    </form>
+    <br>
+  </div>
+
+
+
+<!-- JavaScript for Sidebar -->
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>
